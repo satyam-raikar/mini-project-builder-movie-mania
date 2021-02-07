@@ -1,6 +1,6 @@
 
 
-Link >> https://satyam-raikar.github.io/mini-project-builder-movie-mania/
+Link >> https://satyam-raikar.github.io/mini-project-builder-movie-mania/index.html
 
 
 
