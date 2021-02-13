@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Movie Mania</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -25,18 +28,52 @@
                     <a href="#">Marathi</a>
                 </div>
             </div>
-            <a class="title-home" href="http://">Home</a>
+            <a class="title-home" href="./index.html">Home</a>
             <a class="title-upcoming" href="http://">Upcoming</a>
             <a class="title-popular" href="http://">Popular</a>
         </div>
     </header>
     <div class="black-border"> </div>
     <container class="container">
+        <div class="search-box" id="id-search-box">
+            <span class="above-search-txt">
+                Millions of movies, TV shows and people to discover.<br>
+                Explore now.
+
+            </span>
+            <form id="search-form">
+                <input type="text" class="search-bar" name="search-bar"
+                    placeholder="       Search Movies , TV Shows , Upcoming Movies ..." id="search-bar">
+            </form>
+            <button class="search-btn" onclick="javascript:btn();">
+                Search
+            </button>
+        </div>
+        <!-- <img src="./assets/angrybird.jpg" class="img-display" alt="" srcset="" width="100%" height="550px">  -->
+
+        <!-- 
+        </div>
+        <div class="extra-sections" style="height:10vh">
+    <span class="trending-movies">
+        Trending Movies
+    </span>
+    <span class="trending-tvshows">
+        Trending Tv Shows
+    </span>
+    <span class="latest-trailer">
+        Latest Trailer's
+    </span>
+</div> -->
+        <div class="search-results" id="id-search-results">
+            <span class="search-results-txt">Search Results</span>
+        </div>
         <div class="box">
+
+
             <div class="left-arrow">
                 <img src="./assets/left.png" id="left-arrow" alt="" srcset="" height="70">
             </div>
-            <div class="card-holder">
+            <!-- <div class="card-holder">
                 <div class="movie-name">Wonder Women 1884</div>
                 <div class="movie-releaseDate">25 December 2020</div>
                 <div class="movie-image">
@@ -60,19 +97,22 @@
 
                     <a class="movie-trailer" href="http://">🍿 Trailer</a>
                 </div>
+            </div> -->
+            <div class="card-container" id="card-container">
+                <!--     card is genrated from JS -->
+
             </div>
-            
             <div class="right-arrow">
                 <img src="./assets/right.png" id="right-arrow" alt="" srcset="" height="70">
             </div>
         </div>
     </container>
-    <div class="black-border"> </div>
+    <!-- <div class="black-border"> </div> -->
     <footer class="footer">
 
         <div class="footer-content"> Made with ❤️ with Prograds</div>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 
 </html>

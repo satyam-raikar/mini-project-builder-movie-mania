@@ -13,6 +13,7 @@ body{
 }
 .header{
     height: 10vh;
+    width:100%;
     background-color:  whitesmoke;
     display: flex;
     flex-direction:row;
@@ -20,6 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: black;
+    position: fixed;
 }
  .titles{
      display: flex;
@@ -67,21 +69,102 @@ body{
     margin-right:20px;
 }
 
+
+
+/* ----------------------------------------------------------------------------------------------------------search box */
+.search-results-txt{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    font-size:30px;
+    margin-top:60px;
+}
+
+.search-box{
+
+padding-left: 160px;
+/* position: relative; */
+background-image: url("./assets/angrybird.jpg") ;
+background-position: bottom right;
+background-repeat: no-repeat;
+
+
+display:flex;
+flex-direction:column;
+height:95vh;
+
+}
+.above-search-txt{
+    margin-top:180px;
+    font-size:40px;
+    
+}
+
+.img-display{
+    position: relative;
+}
+
+.search-bar{
+    
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom:10px;
+
+    border-radius: 30px;
+    height:40px;
+}
+
+.search-btn{
+    height:40px;
+    width:100px;
+    margin-left: 350px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------search box ends */
 /* ----------------------------------------------------------------------------------------------------------container */
+
+.search-results{
+    justify-content:center;
+    align-items:center;
+}
+
 
 .container{
     height: 85vh;
-    background-color:rgba(7, 7, 7, 0.671);
-    padding: 10px;
+    /* background-color:rgba(7, 7, 7, 0.671); */
+    ;
 }
 
 .box{
     display: flex;
+    flex-direction:row;
     align-items: center;
     height:100%;
     margin-left: 10px;
     margin-right: 10px;
     justify-content: space-between;
+
+
+
+    max-width: 100%;
+    
+    overflow-x: auto;
+    overflow-y: hidden; 
+    /* overflow-x: hidden; */
 }
 
 .right-arrow , .left-arrow{
@@ -97,19 +180,48 @@ body{
     left: 1;
 }
 
+/* --------------------------------------------------------------card-container start*/
 
+.card-container{
+
+    display:flex;
+    align-items:stretch;
+    width: 100%;
+    overflow: scroll;
+    overflow-y:hidden;
+    
+}
+
+.movie-overview-text{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+
+
+    /* display:inline-block;
+    line-clamp: 3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px; */
+}
+
+/* --------------------------------------------------------------card-container start*/
 
 /* --------------------------------------------------------------cardholder start*/
 .card-holder{
     justify-content:center;
     align-items:center;
     background-color:white;
-    padding:20px;
+    padding:10px;
     height: 400px;
-    width: 200px;
-
+    width: 300px;
+    
     border:1px solid black;
     border-radius: 0px 0px 10px 0px;
+
+    margin: 20px;
 }
 
 .movie-image{
@@ -133,9 +245,11 @@ body{
     justify-content:space-between;
     font-size: 12px;
     padding: 5px;
+    
 }
 
 .movie-links{
+    
     display:flex;
     justify-content:space-between;
     font-size: 18px;
@@ -175,6 +289,10 @@ body{
 /* ----------------------------------------------------------------------------------------------------------.footer{
  */
 .footer{
+position: fixed;
+bottom:0;
+left:0;
+
     display: flex;
     align-items: center;
     justify-content:center;
@@ -186,7 +304,18 @@ body{
     height: 0.5vh;
     background-color:black;
 }
+/* ----------------------------------------------------------------------------------------------------------extra Section */
 
+
+.extra-sections{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+    font-size:30px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------extra Section ends */
 
 /* ----------------------------------------------------------------------------------------------------------dropdown */
 
