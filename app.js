@@ -75,11 +75,12 @@ function getMovies(searchText) {
                 </div>
                 <div class="movie-overview">
                     <span class="movie-overview-text" > ${movie.overview} </span>
+                    <span class ="read-more-link" rel="#">Read More 📲</span>
                 </div>
 
                 <div class="movie-links">
                
-                    <a class="movie-source" href="https://www.imdb.com/find?q=${movie.title}">🕹️ IMdB</a> <!--Implemented IMDB Search -->
+                    <a class="movie-source" href="https://www.imdb.com/find?q=${movie.title}" target="_blank">🕹️ IMdB</a> <!--Implemented IMDB Search -->
             
                     <a class="movie-trailer" href="http://">🍿 Trailer</a>
                 </div>

@@ -255,6 +255,10 @@ height:95vh;
     font-size: 18px;
     padding: 10px;
 }
+.read-more-link{
+    color: blue;
+    right:1;
+}
 
 .seprator{
     margin-left: 5px;
